@@ -17,7 +17,7 @@ class Application
         resp.write "#{item}\n"
       end
       else
-        @@cart.inlcude?
+        @@cart.inlcude?(item)
         resp.write "Your cart is empty"
       end
 
